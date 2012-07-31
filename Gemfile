@@ -1,18 +1,9 @@
 source 'https://rubygems.org'
 
-gem 'awesome_print'
-gem 'haml'
 gem 'jquery-rails'
 gem 'json'
 gem 'sqlite3'
 gem 'rails', '3.2.6'
-gem 'thin'
-
-group :development do
-  gem 'hpricot'
-  gem 'ruby_parser'
-  gem 'silent-postgres'
-end
 
 group :development, :test do
   gem 'pry'
