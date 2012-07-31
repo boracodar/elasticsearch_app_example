@@ -1,9 +1,8 @@
 source 'https://rubygems.org'
 
 gem 'jquery-rails'
-gem 'json'
+gem 'rails', '3.2.7'
 gem 'sqlite3'
-gem 'rails', '3.2.6'
 
 group :development, :test do
   gem 'pry'
