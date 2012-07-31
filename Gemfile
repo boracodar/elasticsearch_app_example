@@ -4,7 +4,7 @@ gem 'awesome_print'
 gem 'haml'
 gem 'jquery-rails'
 gem 'json'
-gem 'pg'
+gem 'sqlite3'
 gem 'rails', '3.2.6'
 gem 'thin'
 

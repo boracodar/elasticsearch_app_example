@@ -11,9 +11,6 @@
 /log/*.log
 /tmp
 
-# Ignore config files
-/config/database.yml
-
 # Ignore files from db directory
 /db/*.sqlite3
 
