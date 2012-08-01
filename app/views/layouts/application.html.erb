@@ -7,8 +7,18 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <nav>
+    <%= link_to 'All movies', movies_path %> |
+    <%= link_to 'New movie', new_movie_path %>
+  </nav>
+  <br>
 
-<%= yield %>
+  <%= form_for :search, url: search_movies_path, method: :get, html: { id: 'search' } do |f| %>
+    <%= f.text_field 'query', value: @query %>
+    <%= f.submit 'Search' %>
+  <% end %>
+  <br><hr><br>
 
+  <%= yield %>
 </body>
 </html>

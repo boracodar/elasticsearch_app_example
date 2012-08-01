@@ -80,4 +80,14 @@ class MoviesController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+  def search
+    @query = params[:search][:query]
+
+    @results = Movie.search load: true do |search|
+      search.query do |query|
+        query.string "name:*#{@query}*"
+      end
+    end
+  end
 end

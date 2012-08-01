@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 gem 'jquery-rails'
 gem 'rails', '3.2.7'
 gem 'sqlite3'
+gem 'tire'
 
 group :development, :test do
   gem 'pry'
@@ -11,12 +12,8 @@ end
 group :test do
   gem 'capybara'
   gem 'database_cleaner'
-  gem 'factory_girl_rails'
-  gem 'forgery'
   gem 'poltergeist'
   gem 'rspec-rails'
-  gem 'shoulda-matchers'
-  gem 'simplecov', :require => false
 end
 
 group :assets do

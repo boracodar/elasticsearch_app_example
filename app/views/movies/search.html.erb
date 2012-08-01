@@ -1,0 +1,22 @@
+<h1>Search results</h1>
+<h3>(About <%= pluralize @results.count, 'result' %>)</h3>
+
+<% if @results.any? %>
+  <table>
+    <tr>
+      <th>Name</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+
+    <% @results.each do |movie| %>
+      <tr>
+        <td><%= movie.name %></td>
+        <td><%= link_to 'Show', movie %></td>
+        <td><%= link_to 'Edit', edit_movie_path(movie) %></td>
+        <td><%= link_to 'Destroy', movie, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </table>
+<% end %>
