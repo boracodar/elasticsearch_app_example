@@ -5,7 +5,6 @@ class Movie < ActiveRecord::Base
   attr_accessible :name
 
   index_name "#{Tire::Model::Search.index_prefix}movies"
-  document_type 'movie'
 
   mapping do
     indexes :name, boost: 10
