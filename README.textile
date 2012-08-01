@@ -8,4 +8,4 @@ http://blog.lucascaton.com.br/?p=1408
 
 h3. Notes:
 
-* Run <pre><code>bundle exec rake db:test:prepare</code></pre>, in order to copy the database schema to test database.
+In order to copy the database schema to test database, run: <pre><code>bundle exec rake db:test:prepare</code></pre>
