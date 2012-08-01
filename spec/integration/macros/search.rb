@@ -7,15 +7,6 @@ module IntegrationHelpers
   end
 
   def delete_movie_index
-    Tire.index(index_name) do
-      delete
-      refresh
-    end
-  end
-
-  private
-
-  def index_name
-    "#{Tire::Model::Search.index_prefix}movies"
+    Movie.index.delete
   end
 end
