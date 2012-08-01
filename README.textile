@@ -9,3 +9,6 @@ http://blog.lucascaton.com.br/?p=1408
 h3. Notes:
 
 In order to copy the database schema to test database, run: <pre><code>bundle exec rake db:test:prepare</code></pre>
+
+In order to run the tests with <strong>poltergeist</strong>, you need to install <strong>PhantomJS</strong>:
+https://github.com/jonleighton/poltergeist#installing-phantomjs
