@@ -4,7 +4,7 @@ Example of app using ElasticSearch with tests!
 
 # Blog post
 
-http://blog.lucascaton.com.br/index.php/2012/08/01/how-to-test-elasticsearch-in-a-rails-application/
+https://www.lucascaton.com.br/2012/08/01/how-to-test-elasticsearch-in-a-rails-application
 
 # Notes:
 
